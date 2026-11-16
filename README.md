@@ -34,7 +34,7 @@ country_region.csv  ──┘
 | `scripts/` | Q1–Q5 analysis SQL with explanations, and the Power BI reporting views |
 | `powerbi/` | Power BI file and helper scripts |
 | `diagrams/` | ER diagrams, SSIS flow and Power BI screenshots |
-| `docs/` | Data quality summary, development log, Power BI guide |
+| `docs/` | Data quality summary, Power BI guide |
 | `reference/`, `bookstore survey.csv` | Country-to-region map and survey data |
 | `DW_Project_Plan.md` | Design plan and decisions |
 | `handoverNotes.html` | Full solution handover: model, assumptions, answers, file catalog |
