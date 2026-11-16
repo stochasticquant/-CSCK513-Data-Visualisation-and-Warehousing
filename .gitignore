@@ -1,0 +1,16 @@
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+
+# Visual Studio / SSIS build output
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.bak
+
+# Power BI temp files
+~$*

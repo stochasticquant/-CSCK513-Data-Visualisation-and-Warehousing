@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1740" height="1374" viewBox="0 0 1740 1374"><rect width="100%" height="100%" fill="#ffffff"/><text x="30" y="42" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">Data warehouse: gravity_dw (star schema)</text><text x="30" y="68" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#4b5563">One fact table at order-line grain, surrounded by five conformed dimensions. Power BI reads only these tables.</text><path d="M360,147.0 H530.0 V399.0 H700" fill="none" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="370" y1="140.0" x2="370" y2="154.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="376" y1="140.0" x2="376" y2="154.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="686" y1="399.0" x2="700" y2="391.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="686" y1="399.0" x2="700" y2="399.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="686" y1="399.0" x2="700" y2="407.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="682" y1="392.0" x2="682" y2="406.0" stroke="#4b5563" stroke-width="1.6"/>
+<path d="M360,517.0 H530.0 V421.0 H700" fill="none" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="370" y1="510.0" x2="370" y2="524.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="376" y1="510.0" x2="376" y2="524.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="686" y1="421.0" x2="700" y2="413.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="686" y1="421.0" x2="700" y2="421.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="686" y1="421.0" x2="700" y2="429.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="682" y1="414.0" x2="682" y2="428.0" stroke="#4b5563" stroke-width="1.6"/>
+<path d="M1370,147.0 H1200.0 V443.0 H1030" fill="none" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="1360" y1="140.0" x2="1360" y2="154.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="1354" y1="140.0" x2="1354" y2="154.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="1044" y1="443.0" x2="1030" y2="435.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="1044" y1="443.0" x2="1030" y2="443.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="1044" y1="443.0" x2="1030" y2="451.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="1048" y1="436.0" x2="1048" y2="450.0" stroke="#4b5563" stroke-width="1.6"/>
+<path d="M1370,517.0 H1200.0 V465.0 H1030" fill="none" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="1360" y1="510.0" x2="1360" y2="524.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="1354" y1="510.0" x2="1354" y2="524.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="1044" y1="465.0" x2="1030" y2="457.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="1044" y1="465.0" x2="1030" y2="465.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="1044" y1="465.0" x2="1030" y2="473.0" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="1048" y1="458.0" x2="1048" y2="472.0" stroke="#4b5563" stroke-width="1.6"/>
+<path d="M865.0,760 V636" stroke="#4b5563" stroke-width="1.6" fill="none"/>
+<line x1="858.0" y1="750" x2="872.0" y2="750" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="858.0" y1="744" x2="872.0" y2="744" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="865.0" y1="650" x2="857.0" y2="636" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="865.0" y1="650" x2="865.0" y2="636" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="865.0" y1="650" x2="873.0" y2="636" stroke="#4b5563" stroke-width="1.6"/>
+<line x1="858.0" y1="654" x2="872.0" y2="654" stroke="#4b5563" stroke-width="1.6"/>
+<text x="875.0" y="686" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">shipping_key</text>
+<rect x="60" y="940" width="1390" height="326" rx="10" fill="#6b7280" fill-opacity="0.06" stroke="#6b7280" stroke-dasharray="6 4"/><text x="74" y="964" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" fill="#6b7280">Control tables (schemas etl and dq): ETL configuration, audit log and data-quality results, outside the star</text>
+<g><rect x="700" y="330" width="330" height="306" rx="6" fill="#ffffff" stroke="#1e3a8a" stroke-width="1.5"/>
+<path d="M700,336 a6,6 0 0 1 6,-6 h318 a6,6 0 0 1 6,6 v28 h-330 z" fill="#1e3a8a"/>
+<text x="710" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">fact_sales  (grain: one order line)</text>
+<rect x="708" y="368" width="24" height="14" rx="3" fill="#b7791f"/><text x="720" y="379" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">PK</text>
+<text x="740" y="379" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">sales_key ◆</text>
+<text x="1020" y="379" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">bigint NN</text>
+<rect x="701" y="386" width="328" height="22" fill="#f4f6f9"/>
+<rect x="708" y="390" width="24" height="14" rx="3" fill="#2b6cb0"/><text x="720" y="401" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">FK</text>
+<text x="740" y="401" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">order_date_key</text>
+<text x="1020" y="401" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="708" y="412" width="24" height="14" rx="3" fill="#2b6cb0"/><text x="720" y="423" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">FK</text>
+<text x="740" y="423" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">customer_key</text>
+<text x="1020" y="423" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="701" y="430" width="328" height="22" fill="#f4f6f9"/>
+<rect x="708" y="434" width="24" height="14" rx="3" fill="#2b6cb0"/><text x="720" y="445" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">FK</text>
+<text x="740" y="445" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">book_key</text>
+<text x="1020" y="445" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="708" y="456" width="24" height="14" rx="3" fill="#2b6cb0"/><text x="720" y="467" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">FK</text>
+<text x="740" y="467" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">location_key</text>
+<text x="1020" y="467" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="701" y="474" width="328" height="22" fill="#f4f6f9"/>
+<rect x="708" y="478" width="24" height="14" rx="3" fill="#2b6cb0"/><text x="720" y="489" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">FK</text>
+<text x="740" y="489" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">shipping_key</text>
+<text x="1020" y="489" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<text x="740" y="511" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">order_id</text>
+<text x="1020" y="511" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="701" y="518" width="328" height="22" fill="#f4f6f9"/>
+<rect x="708" y="522" width="24" height="14" rx="3" fill="#6b7280"/><text x="720" y="533" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">UQ</text>
+<text x="740" y="533" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">line_id</text>
+<text x="1020" y="533" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<text x="740" y="555" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">sales_amount</text>
+<text x="1020" y="555" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">decimal(7,2) NN</text>
+<rect x="701" y="562" width="328" height="22" fill="#f4f6f9"/>
+<text x="740" y="577" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">quantity</text>
+<text x="1020" y="577" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<text x="740" y="599" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">latest_order_status</text>
+<text x="1020" y="599" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(20) NN</text>
+<rect x="701" y="606" width="328" height="22" fill="#f4f6f9"/>
+<text x="740" y="621" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">is_cancelled_or_returned</text>
+<text x="1020" y="621" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">bit NN</text>
+</g>
+<g><rect x="60" y="100" width="300" height="306" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+<path d="M60,106 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v28 h-300 z" fill="#0f766e"/>
+<text x="70" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">dim_date</text>
+<rect x="68" y="138" width="24" height="14" rx="3" fill="#b7791f"/><text x="80" y="149" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">PK</text>
+<text x="100" y="149" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">date_key</text>
+<text x="350" y="149" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="61" y="156" width="298" height="22" fill="#f4f6f9"/>
+<text x="100" y="171" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">full_date</text>
+<text x="350" y="171" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">date</text>
+<text x="100" y="193" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">day_of_month</text>
+<text x="350" y="193" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">tinyint</text>
+<rect x="61" y="200" width="298" height="22" fill="#f4f6f9"/>
+<text x="100" y="215" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">day_name</text>
+<text x="350" y="215" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(10)</text>
+<text x="100" y="237" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">month_num</text>
+<text x="350" y="237" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">tinyint</text>
+<rect x="61" y="244" width="298" height="22" fill="#f4f6f9"/>
+<text x="100" y="259" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">month_name</text>
+<text x="350" y="259" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(10)</text>
+<text x="100" y="281" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">quarter_num</text>
+<text x="350" y="281" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">tinyint</text>
+<rect x="61" y="288" width="298" height="22" fill="#f4f6f9"/>
+<text x="100" y="303" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">quarter_label</text>
+<text x="350" y="303" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">char(2)</text>
+<text x="100" y="325" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">year_num</text>
+<text x="350" y="325" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">smallint</text>
+<rect x="61" y="332" width="298" height="22" fill="#f4f6f9"/>
+<text x="100" y="347" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">year_month</text>
+<text x="350" y="347" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">char(7)</text>
+<text x="100" y="369" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">year_quarter</text>
+<text x="350" y="369" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">char(7)</text>
+<rect x="61" y="376" width="298" height="22" fill="#f4f6f9"/>
+<text x="100" y="391" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">campaign_period</text>
+<text x="350" y="391" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(20) NN</text>
+</g>
+<g><rect x="60" y="470" width="300" height="262" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+<path d="M60,476 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v28 h-300 z" fill="#0f766e"/>
+<text x="70" y="492" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">dim_customer</text>
+<rect x="68" y="508" width="24" height="14" rx="3" fill="#b7791f"/><text x="80" y="519" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">PK</text>
+<text x="100" y="519" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">customer_key ◆</text>
+<text x="350" y="519" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="61" y="526" width="298" height="22" fill="#f4f6f9"/>
+<rect x="68" y="530" width="24" height="14" rx="3" fill="#6b7280"/><text x="80" y="541" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">UQ</text>
+<text x="100" y="541" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">customer_id</text>
+<text x="350" y="541" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<text x="100" y="563" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">first_name</text>
+<text x="350" y="563" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(200)</text>
+<rect x="61" y="570" width="298" height="22" fill="#f4f6f9"/>
+<text x="100" y="585" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">last_name</text>
+<text x="350" y="585" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(200)</text>
+<text x="100" y="607" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">full_name</text>
+<text x="350" y="607" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(401)</text>
+<rect x="61" y="614" width="298" height="22" fill="#f4f6f9"/>
+<text x="100" y="629" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">email</text>
+<text x="350" y="629" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(350)</text>
+<text x="100" y="651" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">email_domain</text>
+<text x="350" y="651" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(200)</text>
+<rect x="61" y="658" width="298" height="22" fill="#f4f6f9"/>
+<text x="100" y="673" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">heard_about</text>
+<text x="350" y="673" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(50) NN</text>
+<text x="100" y="695" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">preferred_channel</text>
+<text x="350" y="695" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(50) NN</text>
+<rect x="61" y="702" width="298" height="22" fill="#f4f6f9"/>
+<text x="100" y="717" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">survey_responded</text>
+<text x="350" y="717" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">bit NN</text>
+</g>
+<g><rect x="700" y="760" width="330" height="130" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+<path d="M700,766 a6,6 0 0 1 6,-6 h318 a6,6 0 0 1 6,6 v28 h-330 z" fill="#0f766e"/>
+<text x="710" y="782" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">dim_shipping_method</text>
+<rect x="708" y="798" width="24" height="14" rx="3" fill="#b7791f"/><text x="720" y="809" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">PK</text>
+<text x="740" y="809" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">shipping_key ◆</text>
+<text x="1020" y="809" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="701" y="816" width="328" height="22" fill="#f4f6f9"/>
+<rect x="708" y="820" width="24" height="14" rx="3" fill="#6b7280"/><text x="720" y="831" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">UQ</text>
+<text x="740" y="831" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">method_id</text>
+<text x="1020" y="831" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<text x="740" y="853" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">method_name</text>
+<text x="1020" y="853" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(100) NN</text>
+<rect x="701" y="860" width="328" height="22" fill="#f4f6f9"/>
+<text x="740" y="875" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">cost</text>
+<text x="1020" y="875" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">decimal(6,2)</text>
+</g>
+<g><rect x="1370" y="100" width="310" height="284" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+<path d="M1370,106 a6,6 0 0 1 6,-6 h298 a6,6 0 0 1 6,6 v28 h-310 z" fill="#0f766e"/>
+<text x="1380" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">dim_book</text>
+<rect x="1378" y="138" width="24" height="14" rx="3" fill="#b7791f"/><text x="1390" y="149" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">PK</text>
+<text x="1410" y="149" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">book_key ◆</text>
+<text x="1670" y="149" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="1371" y="156" width="308" height="22" fill="#f4f6f9"/>
+<rect x="1378" y="160" width="24" height="14" rx="3" fill="#6b7280"/><text x="1390" y="171" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">UQ</text>
+<text x="1410" y="171" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">book_id</text>
+<text x="1670" y="171" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<text x="1410" y="193" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">title</text>
+<text x="1670" y="193" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(400)</text>
+<rect x="1371" y="200" width="308" height="22" fill="#f4f6f9"/>
+<text x="1410" y="215" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">isbn13</text>
+<text x="1670" y="215" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">char(13)</text>
+<text x="1410" y="237" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">num_pages</text>
+<text x="1670" y="237" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int</text>
+<rect x="1371" y="244" width="308" height="22" fill="#f4f6f9"/>
+<text x="1410" y="259" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">publication_date</text>
+<text x="1670" y="259" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">date</text>
+<text x="1410" y="281" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">publication_year</text>
+<text x="1670" y="281" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">smallint</text>
+<rect x="1371" y="288" width="308" height="22" fill="#f4f6f9"/>
+<text x="1410" y="303" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">publisher_name</text>
+<text x="1670" y="303" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(400)</text>
+<text x="1410" y="325" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">language_code</text>
+<text x="1670" y="325" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(8)</text>
+<rect x="1371" y="332" width="308" height="22" fill="#f4f6f9"/>
+<text x="1410" y="347" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">language_name</text>
+<text x="1670" y="347" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(50)</text>
+<text x="1410" y="369" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">language_group</text>
+<text x="1670" y="369" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(20) NN</text>
+</g>
+<g><rect x="1370" y="470" width="310" height="240" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+<path d="M1370,476 a6,6 0 0 1 6,-6 h298 a6,6 0 0 1 6,6 v28 h-310 z" fill="#0f766e"/>
+<text x="1380" y="492" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">dim_location</text>
+<rect x="1378" y="508" width="24" height="14" rx="3" fill="#b7791f"/><text x="1390" y="519" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">PK</text>
+<text x="1410" y="519" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">location_key ◆</text>
+<text x="1670" y="519" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="1371" y="526" width="308" height="22" fill="#f4f6f9"/>
+<rect x="1378" y="530" width="24" height="14" rx="3" fill="#6b7280"/><text x="1390" y="541" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">UQ</text>
+<text x="1410" y="541" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">address_id</text>
+<text x="1670" y="541" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<text x="1410" y="563" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">street_number</text>
+<text x="1670" y="563" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(10)</text>
+<rect x="1371" y="570" width="308" height="22" fill="#f4f6f9"/>
+<text x="1410" y="585" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">street_name</text>
+<text x="1670" y="585" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(200)</text>
+<text x="1410" y="607" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">city</text>
+<text x="1670" y="607" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(100)</text>
+<rect x="1371" y="614" width="308" height="22" fill="#f4f6f9"/>
+<text x="1410" y="629" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">country_id</text>
+<text x="1670" y="629" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int</text>
+<text x="1410" y="651" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">country_name</text>
+<text x="1670" y="651" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(200) NN</text>
+<rect x="1371" y="658" width="308" height="22" fill="#f4f6f9"/>
+<text x="1410" y="673" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">region</text>
+<text x="1670" y="673" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(50) NN</text>
+<text x="1410" y="695" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">country_status</text>
+<text x="1670" y="695" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(20) NN</text>
+</g>
+<g><rect x="80" y="984" width="330" height="108" rx="6" fill="#ffffff" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M80,990 a6,6 0 0 1 6,-6 h318 a6,6 0 0 1 6,6 v28 h-330 z" fill="#6b7280"/>
+<text x="90" y="1006" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">etl.config</text>
+<rect x="88" y="1022" width="24" height="14" rx="3" fill="#b7791f"/><text x="100" y="1033" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">PK</text>
+<text x="120" y="1033" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">config_key</text>
+<text x="400" y="1033" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(50) NN</text>
+<rect x="81" y="1040" width="328" height="22" fill="#f4f6f9"/>
+<text x="120" y="1055" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">config_value</text>
+<text x="400" y="1055" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(200) NN</text>
+<text x="120" y="1077" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">description</text>
+<text x="400" y="1077" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(400)</text>
+</g>
+<g><rect x="450" y="984" width="300" height="262" rx="6" fill="#ffffff" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M450,990 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v28 h-300 z" fill="#6b7280"/>
+<text x="460" y="1006" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">etl.audit</text>
+<rect x="458" y="1022" width="24" height="14" rx="3" fill="#b7791f"/><text x="470" y="1033" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">PK</text>
+<text x="490" y="1033" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">audit_id ◆</text>
+<text x="740" y="1033" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="451" y="1040" width="298" height="22" fill="#f4f6f9"/>
+<text x="490" y="1055" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">package_name</text>
+<text x="740" y="1055" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(100) NN</text>
+<text x="490" y="1077" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">task_name</text>
+<text x="740" y="1077" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(100) NN</text>
+<rect x="451" y="1084" width="298" height="22" fill="#f4f6f9"/>
+<text x="490" y="1099" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">table_name</text>
+<text x="740" y="1099" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(100)</text>
+<text x="490" y="1121" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">rows_read</text>
+<text x="740" y="1121" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int</text>
+<rect x="451" y="1128" width="298" height="22" fill="#f4f6f9"/>
+<text x="490" y="1143" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">rows_written</text>
+<text x="740" y="1143" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int</text>
+<text x="490" y="1165" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">rows_rejected</text>
+<text x="740" y="1165" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int</text>
+<rect x="451" y="1172" width="298" height="22" fill="#f4f6f9"/>
+<text x="490" y="1187" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">start_time</text>
+<text x="740" y="1187" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">datetime2 NN</text>
+<text x="490" y="1209" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">end_time</text>
+<text x="740" y="1209" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">datetime2</text>
+<rect x="451" y="1216" width="298" height="22" fill="#f4f6f9"/>
+<text x="490" y="1231" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">status</text>
+<text x="740" y="1231" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(20) NN</text>
+</g>
+<g><rect x="790" y="984" width="300" height="218" rx="6" fill="#ffffff" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M790,990 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v28 h-300 z" fill="#6b7280"/>
+<text x="800" y="1006" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">dq.check_log</text>
+<rect x="798" y="1022" width="24" height="14" rx="3" fill="#b7791f"/><text x="810" y="1033" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">PK</text>
+<text x="830" y="1033" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">check_id ◆</text>
+<text x="1080" y="1033" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="791" y="1040" width="298" height="22" fill="#f4f6f9"/>
+<text x="830" y="1055" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">run_time</text>
+<text x="1080" y="1055" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">datetime2 NN</text>
+<text x="830" y="1077" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">check_name</text>
+<text x="1080" y="1077" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(100) NN</text>
+<rect x="791" y="1084" width="298" height="22" fill="#f4f6f9"/>
+<text x="830" y="1099" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">dq_dimension</text>
+<text x="1080" y="1099" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(20) NN</text>
+<text x="830" y="1121" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">table_name</text>
+<text x="1080" y="1121" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(100) NN</text>
+<rect x="791" y="1128" width="298" height="22" fill="#f4f6f9"/>
+<text x="830" y="1143" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">failed_rows</text>
+<text x="1080" y="1143" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<text x="830" y="1165" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">severity</text>
+<text x="1080" y="1165" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(10) NN</text>
+<rect x="791" y="1172" width="298" height="22" fill="#f4f6f9"/>
+<text x="830" y="1187" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">treatment</text>
+<text x="1080" y="1187" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(300)</text>
+</g>
+<g><rect x="1130" y="984" width="300" height="196" rx="6" fill="#ffffff" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M1130,990 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v28 h-300 z" fill="#6b7280"/>
+<text x="1140" y="1006" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">dq.fact_rejects</text>
+<rect x="1138" y="1022" width="24" height="14" rx="3" fill="#b7791f"/><text x="1150" y="1033" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">PK</text>
+<text x="1170" y="1033" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1f2937">reject_id ◆</text>
+<text x="1420" y="1033" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int NN</text>
+<rect x="1131" y="1040" width="298" height="22" fill="#f4f6f9"/>
+<text x="1170" y="1055" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">line_id</text>
+<text x="1420" y="1055" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int</text>
+<text x="1170" y="1077" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">order_id</text>
+<text x="1420" y="1077" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int</text>
+<rect x="1131" y="1084" width="298" height="22" fill="#f4f6f9"/>
+<text x="1170" y="1099" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">book_id</text>
+<text x="1420" y="1099" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">int</text>
+<text x="1170" y="1121" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">price</text>
+<text x="1420" y="1121" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">decimal(7,2)</text>
+<rect x="1131" y="1128" width="298" height="22" fill="#f4f6f9"/>
+<text x="1170" y="1143" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">reject_reason</text>
+<text x="1420" y="1143" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">varchar(200) NN</text>
+<text x="1170" y="1165" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#1f2937">reject_time</text>
+<text x="1420" y="1165" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">datetime2 NN</text>
+</g>
+<text x="60" y="1300" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#374151" xml:space="preserve">Legend:  PK primary key (surrogate, INT IDENTITY ◆)  ·  FK foreign key  ·  UQ unique business key from the source  ·  NN NOT NULL  ·  ─|| one   ─&lt; many</text>
+<text x="60" y="1318" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#374151" xml:space="preserve">Every dimension holds an &#x27;Unknown&#x27; member with key -1, so fact rows whose lookups fail still load and can be counted.</text>
+<text x="60" y="1336" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#374151" xml:space="preserve">order_id and line_id in fact_sales are degenerate dimensions (kept for counting orders and tracing lines to the source).</text></svg>
