@@ -12,7 +12,7 @@ Group project for CSCK513. It takes the Gravity Books data warehouse built for t
 | Q4 | What are the factors that affect the total sales of a book? | No book attribute stands out (about 14 per book); totals follow the number of titles. Campaign period +3.4% |
 | Q5 | What geographical areas have the most sales and what are the trends for different countries? | Asia 44.7%, Europe 29.9%. China, the largest market, is down 15.8%; the Philippines, Poland and Indonesia are growing |
 
-Method, assumptions and full results for each question are in `scripts/Q*.md` and in `handoverNotes.html`.
+Method, assumptions and full results for each question are in `scripts/Q*.md` and in [`handoverNotes.md`](handoverNotes.md).
 
 ## Architecture
 
@@ -37,9 +37,10 @@ country_region.csv  ──┘
 | `docs/` | Data quality summary, Power BI guide |
 | `reference/`, `bookstore survey.csv` | Country-to-region map and survey data |
 | `DW_Project_Plan.md` | Design plan and decisions |
-| `handoverNotes.html` | Full solution handover: model, assumptions, answers, file catalog |
+| `handoverNotes.md` | Full solution handover: model, assumptions, answers, file catalog |
+| `handoverNotes.html` | The same handover as a self-contained web page |
 
-`handoverNotes.html` is a self-contained page. Download it and open it in a browser; GitHub shows it as source only.
+Start with [`handoverNotes.md`](handoverNotes.md), which GitHub displays. `handoverNotes.html` has the same content as a single page to download and open in a browser.
 
 ## Rebuilding
 

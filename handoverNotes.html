@@ -62,10 +62,10 @@
 <li>What are the factors that affect the total sales of a book?</li>
 <li>What geographical areas have the most sales and what are the trends for different countries?</li>
 </ol>
-<p>Everything referenced here is in the <code>ModuleProject</code> folder; file paths below are relative to it.</p>
+<p>Everything referenced here is in the <code>ModuleProject</code> folder; file paths below are relative to it. The same notes are in <code>handoverNotes.md</code>, which GitHub displays.</p>
 
 <h2 id="catalog">Handover catalog</h2>
-<p>77 files are handed over in <code>ModuleProject</code>, plus this page. They are listed in build order: source data first, then the warehouse, the ETL, the analysis and the dashboard.</p>
+<p>The files handed over are listed in build order: source data first, then the warehouse, the ETL, the analysis and the dashboard.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Area</th><th>File(s)</th><th>What it is</th><th>Use it for</th></tr></thead>
 <tbody>
@@ -94,12 +94,15 @@
 <tr><td>Diagrams</td><td><code>diagrams/er_staging.*</code>, <code>diagrams/er_warehouse.*</code> (PNG + SVG)</td><td>ER diagrams of staging and the star schema</td><td>Report and video</td></tr>
 <tr><td>Diagrams</td><td><code>diagrams/extract_*.png</code> (4), <code>diagrams/tl_*.png</code> (5)</td><td>Screenshots of the SSIS control and data flows</td><td>Explaining the ETL</td></tr>
 <tr><td>Diagrams</td><td><code>diagrams/pbi_*.png</code> (6)</td><td>Screenshots of the Power BI model and the 3 mid-module pages</td><td>Reference for the dashboard</td></tr>
+<tr><td>Diagrams</td><td><code>diagrams/handover/*.png</code> (3)</td><td>Architecture, star schema and Q5 country-trend images</td><td>Figures in these handover notes</td></tr>
 <tr><td>Diagrams</td><td><code>diagrams/shot9.png</code></td><td>Unlabelled screenshot</td><td>Check before using</td></tr>
 <tr><td>Diagrams</td><td><code>diagrams/tools/build_er_diagrams.py</code></td><td>Script that draws the two ER diagrams</td><td>Redrawing them after a model change</td></tr>
+<tr><td>Documentation</td><td><code>README.md</code></td><td>Repository overview and rebuild steps</td><td>First stop for anyone opening the repo</td></tr>
 <tr><td>Documentation</td><td><code>DW_Project_Plan.md</code></td><td>Original plan: design decisions, staging, ETL, cleansing plan</td><td>Rationale behind the design</td></tr>
 <tr><td>Documentation</td><td><code>docs/Data_Quality_Summary.md</code></td><td>Checks, issues found, treatments, before/after counts</td><td>Data quality discussion</td></tr>
 <tr><td>Documentation</td><td><code>docs/PowerBI_Guide.md</code></td><td>Steps for the model, measures, pages and checks</td><td>Building the dashboard</td></tr>
-<tr><td>Documentation</td><td><code>handoverNotes.html</code></td><td>This page</td><td>Overview of the whole solution</td></tr>
+<tr><td>Documentation</td><td><code>handoverNotes.md</code></td><td>These notes, as Markdown (renders on GitHub)</td><td>Overview of the whole solution</td></tr>
+<tr><td>Documentation</td><td><code>handoverNotes.html</code></td><td>This page: the same notes as one self-contained web page</td><td>Reading offline in a browser</td></tr>
 </tbody></table></div>
 
 <h2 id="architecture">Solution architecture</h2>
