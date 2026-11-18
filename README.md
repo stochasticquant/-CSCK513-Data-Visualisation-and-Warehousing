@@ -43,6 +43,82 @@ country_region.csv  ──┘
 
 Start with [`handoverNotes.md`](handoverNotes.md), which GitHub displays. `handoverNotes.html` has the same content as a single page to download and open in a browser.
 
+## Restoring the agreed database
+
+The [`snapshot/`](snapshot/) folder holds the agreed, populated `gravity_dw`, including the `rpt` views. It was taken from **SQL Server 2025 (17.0.1145.4)**. Restore it rather than rebuilding, so the dashboard, documentation and video all show the same figures.
+
+A `.bak` backup can only be restored on the version it came from or a newer one. On older versions, use the script instead.
+
+| Your SQL Server | Method | Compatibility level |
+|---|---|---|
+| SQL Server 2025 (17.x), any edition, incl. Express/Developer | **A – restore `gravity_dw_snapshot_20261118.bak`** (script B also works) | 170 |
+| SQL Server 2022 (16.x) | **B – run `gravity_dw_schema_and_data.sql`** | 160 |
+| SQL Server 2019 (15.x) | **B** | 150 |
+| SQL Server 2017 (14.x) | **B** | 140 |
+| SQL Server 2016 (13.x) | **B** | 130 |
+| SQL Server 2014 or older | Not supported (out of Microsoft support, untested). Upgrade, or use Docker (C). | – |
+| Azure SQL Database / Managed Instance | **B** | default |
+| macOS, Linux, or no SQL Server installed | **C – SQL Server 2025 in Docker**, then A | 170 |
+
+To find your version, run `SELECT @@VERSION;`.
+
+### A. SQL Server 2025: restore the backup
+
+1. Copy `gravity_dw_snapshot_20261118.bak` to a folder the SQL Server service account can read, such as the instance's `Backup` folder (`C:\Program Files\Microsoft SQL Server\MSSQL17.MSSQLSERVER\MSSQL\Backup\`). The service usually can't read your user folders, such as Documents or Downloads.
+2. Restore it. In SSMS, right-click **Databases**, choose **Restore Database…**, pick **Device**, select the `.bak` and click **OK**. Or run:
+
+   ```sql
+   RESTORE DATABASE gravity_dw
+     FROM DISK = N'C:\Program Files\Microsoft SQL Server\MSSQL17.MSSQLSERVER\MSSQL\Backup\gravity_dw_snapshot_20261118.bak'
+     WITH MOVE N'gravity_dw'     TO N'C:\Program Files\Microsoft SQL Server\MSSQL17.MSSQLSERVER\MSSQL\DATA\gravity_dw.mdf',
+          MOVE N'gravity_dw_log' TO N'C:\Program Files\Microsoft SQL Server\MSSQL17.MSSQLSERVER\MSSQL\DATA\gravity_dw_log.ldf',
+          RECOVERY, STATS = 10;
+   ```
+
+   For a named instance, change the `MSSQL17.MSSQLSERVER` part of the paths. If a `gravity_dw` database already exists, add `REPLACE` to the `WITH` list; this overwrites it.
+
+### B. SQL Server 2016–2022 or Azure SQL: run the script
+
+1. Create an empty database, and set the compatibility level for your version from the table above:
+
+   ```sql
+   CREATE DATABASE gravity_dw COLLATE Latin1_General_CI_AS;
+   ALTER DATABASE gravity_dw SET COMPATIBILITY_LEVEL = 160;   -- 2022; use 150/140/130 for 2019/2017/2016
+   ```
+
+   On Azure SQL Database, create the database in the portal (or with `CREATE DATABASE`) while connected to `master`, and skip the `ALTER`.
+2. Run `snapshot/gravity_dw_schema_and_data.sql` **inside** `gravity_dw`. It takes about 30 seconds.
+   * **SSMS:** open the file, select `gravity_dw` in the database drop-down, then press **Execute**.
+   * **Command line:** `sqlcmd -S <server> -E -d gravity_dw -f 65001 -i snapshot\gravity_dw_schema_and_data.sql`. On Azure, use `-U <user> -P <password>` instead of `-E`. `-f 65001` makes sure the file is read as UTF-8.
+3. The script finishes with `gravity_dw snapshot load complete.`
+
+On **Azure SQL Database**, the two `dq.*` procedures may fail to create, because they refer to the separate `gravity_staging` database and Azure SQL Database doesn't allow that. You can ignore those errors. The tables, data and `rpt` views still load, and the procedures aren't needed for the dashboard.
+
+### C. No Windows SQL Server: run SQL Server 2025 in Docker
+
+```bash
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<StrongPassw0rd!>" -p 1433:1433 --name gravity -d mcr.microsoft.com/mssql/server:2025-latest
+docker cp snapshot/gravity_dw_snapshot_20261118.bak gravity:/var/opt/mssql/data/
+```
+
+Then connect to `localhost,1433` as `sa` (from SSMS, Azure Data Studio or VS Code) and restore:
+
+```sql
+RESTORE DATABASE gravity_dw FROM DISK = N'/var/opt/mssql/data/gravity_dw_snapshot_20261118.bak'
+  WITH MOVE N'gravity_dw'     TO N'/var/opt/mssql/data/gravity_dw.mdf',
+       MOVE N'gravity_dw_log' TO N'/var/opt/mssql/data/gravity_dw_log.ldf', RECOVERY;
+```
+
+On Apple Silicon Macs, add `--platform linux/amd64` to `docker run`, and enable Rosetta in Docker Desktop settings.
+
+### Check the restore (every method)
+
+Run `snapshot/verify_snapshot.sql` in `gravity_dw`. Each row count and checksum must match the table in [`snapshot/README.md`](snapshot/README.md). The headline figures are 15,390 rows in `dbo.fact_sales` and total sales of 154,966.34.
+
+Then point Power BI at the restored server (**Transform data**, then **Data source settings**) and refresh.
+
+> Testing: the backup was restored and verified on SQL Server 2025. The script was loaded into fresh databases at compatibility levels 170 and 130 (SQL Server 2016 behaviour), and both matched the original exactly. It hasn't been run on actual 2016–2022 servers or on Azure.
+
 ## Rebuilding
 
 Requires SQL Server (Windows authentication), Visual Studio with the SSIS extension, and Power BI Desktop.
@@ -55,4 +131,4 @@ Requires SQL Server (Windows authentication), Visual Studio with the SSIS extens
 
 The order data in `gravity_books` is randomly generated by source scripts 10–13, so a rebuild changes every figure above.
 
-To work with the agreed figures, load the snapshot instead of rebuilding. See [`snapshot/README.md`](snapshot/README.md): restore the `.bak` on SQL Server 2025, or run `gravity_dw_schema_and_data.sql` on any version, then check the load with `verify_snapshot.sql`.
+To work with the agreed figures, don't rebuild. Restore the snapshot instead (see [Restoring the agreed database](#restoring-the-agreed-database)).
