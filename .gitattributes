@@ -1,0 +1,2 @@
+# Store the agreed snapshot byte-for-byte so file hashes stay valid
+snapshot/** -text

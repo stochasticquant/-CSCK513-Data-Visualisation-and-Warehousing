@@ -1,0 +1,16 @@
+﻿factor,level_name,customers,units,sales,sales_per_customer
+Heard about,Physical Store,318,2800,28240.80,88.81
+Heard about,No response,1,7,92.19,92.19
+Heard about,Online Advertisement,359,3126,31665.50,88.20
+Heard about,Web Search,443,3873,39263.57,88.63
+Heard about,Friend Recommendation,547,4857,48303.52,88.31
+Heard about,Other,79,727,7400.76,93.68
+Preferred channel,Online,1075,9438,95145.36,88.51
+Preferred channel,Book Club,180,1638,16374.79,90.97
+Preferred channel,Physical Store,396,3479,35017.31,88.43
+Preferred channel,No response,1,7,92.19,92.19
+Preferred channel,Other,95,828,8336.69,87.75
+Shipping method,Priority,1268,3971,39893.41,31.46
+Shipping method,Express,1675,8848,89080.76,53.18
+Shipping method,Standard,95,195,1890.67,19.90
+Shipping method,International,975,2376,24101.50,24.72

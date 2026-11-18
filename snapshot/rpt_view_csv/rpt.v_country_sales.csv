@@ -1,0 +1,110 @@
+﻿country_name,region,customers,units,sales,sales_rank,pct_of_total,prior_12m_sales,last_12m_sales,pct_change_12m,trend
+China,Asia,517,2749,27493.88,1,17.7,10134.35,8530.09,-15.8,Declining
+Indonesia,Asia,388,1951,19356.58,2,12.5,6530.89,6868.81,5.2,Growing
+Russia,Europe,209,946,9718.73,3,6.3,3266.85,3287.67,0.6,Flat
+Brazil,South America,133,658,6657.03,4,4.3,2266.11,2190.29,-3.3,Flat
+Portugal,Europe,121,634,6461.64,5,4.2,2328.34,2188.63,-6.0,Declining
+Philippines,Asia,120,608,6167.47,6,4.0,2122.91,2336.47,10.1,Growing
+Poland,Europe,111,542,5524.82,7,3.6,1817.91,1995.11,9.7,Growing
+United States of America,North America,99,493,5000.68,8,3.2,1651.95,1635.78,-1.0,Flat
+France,Europe,96,479,4879.88,9,3.1,1565.11,1610.71,2.9,Flat
+Peru,South America,87,417,4425.61,10,2.9,1445.70,1481.84,2.5,Flat
+Sweden,Europe,79,386,3650.45,11,2.4,1343.33,1267.18,-5.7,Declining
+Czech Republic,Europe,57,290,3004.86,12,1.9,864.65,1096.22,26.8,Growing
+Colombia,South America,51,247,2513.72,13,1.6,672.45,922.01,37.1,Growing
+Japan,Asia,48,239,2385.54,14,1.5,888.72,815.38,-8.3,Declining
+Ukraine,Europe,46,209,2266.71,15,1.5,722.29,819.00,13.4,Growing
+Greece,Europe,40,224,2213.76,16,1.4,858.24,622.03,-27.5,Declining
+Canada,North America,43,231,2168.15,17,1.4,779.08,743.64,-4.5,Flat
+Armenia,Asia,37,205,2046.36,18,1.3,645.26,645.41,0.0,Flat
+Nigeria,Africa,30,167,1666.17,19,1.1,411.50,609.06,48.0,Growing
+Iran,Asia,31,149,1625.11,20,1.0,528.76,622.53,17.7,Growing
+Vietnam,Asia,32,144,1431.50,21,0.9,416.25,469.38,12.8,Growing
+Argentina,South America,28,129,1413.69,22,0.9,559.26,341.68,-38.9,Declining
+Thailand,Asia,33,137,1408.87,23,0.9,563.40,432.00,-23.3,Declining
+Mexico,North America,28,132,1391.26,24,0.9,553.10,450.48,-18.6,Declining
+Guatemala,North America,24,144,1385.65,25,0.9,474.38,544.61,14.8,Growing
+Serbia,Europe,29,116,1135.03,26,0.7,405.57,395.09,-2.6,Flat
+Afghanistan,Asia,21,97,1049.92,27,0.7,393.04,339.05,-13.7,Declining
+Madagascar,Africa,16,82,898.47,28,0.6,273.96,291.56,6.4,Growing
+Kenya,Africa,14,86,883.26,29,0.6,468.79,248.68,-47.0,Declining
+Norway,Europe,17,83,792.33,30,0.5,188.72,389.10,106.2,Growing
+Comoros,Africa,13,58,688.48,31,0.4,329.54,335.57,1.8,Flat
+Azerbaijan,Asia,18,76,682.86,32,0.4,122.99,190.05,54.5,Growing
+Tunisia,Africa,14,68,681.62,33,0.4,257.37,202.31,-21.4,Declining
+Finland,Europe,16,72,666.83,34,0.4,309.20,153.77,-50.3,Declining
+Malaysia,Asia,14,64,655.33,35,0.4,137.74,172.99,25.6,Growing
+Cameroon,Africa,16,65,632.95,36,0.4,162.62,212.36,30.6,Growing
+New Zealand,Oceania,13,60,605.32,37,0.4,133.29,176.21,32.2,Growing
+South Africa,Africa,12,57,576.71,38,0.4,199.06,255.94,28.6,Growing
+Pakistan,Asia,12,60,550.61,39,0.4,183.26,162.32,-11.4,Declining
+Syria,Asia,13,48,540.54,40,0.3,200.28,131.13,-34.5,Declining
+Netherlands,Europe,12,55,525.76,41,0.3,159.91,257.16,60.8,Growing
+Tajikistan,Asia,10,55,523.53,42,0.3,140.76,147.79,5.0,Flat
+Panama,North America,8,52,493.43,43,0.3,221.28,139.50,-37.0,Declining
+Belarus,Europe,11,49,485.83,44,0.3,175.77,126.37,-28.1,Declining
+Mongolia,Asia,12,55,480.48,45,0.3,114.40,94.69,-17.2,Declining
+Ireland,Europe,9,46,465.99,46,0.3,136.79,170.33,24.5,Growing
+Slovakia,Europe,5,36,456.10,47,0.3,120.81,207.42,71.7,Growing
+Croatia,Europe,9,46,437.95,48,0.3,150.98,117.60,-22.1,Declining
+Costa Rica,North America,12,48,436.36,49,0.3,116.97,222.90,90.6,Growing
+Bhutan,Asia,7,44,423.88,50,0.3,144.44,148.87,3.1,Flat
+Albania,Europe,9,44,417.62,51,0.3,145.61,141.80,-2.6,Flat
+Democratic Republic of the Congo,Africa,9,35,402.78,52,0.3,146.86,27.90,-81.0,Declining
+Morocco,Africa,8,39,396.18,53,0.3,54.39,89.61,64.8,Growing
+Dominican Republic,North America,9,37,395.06,54,0.3,120.64,154.74,28.3,Growing
+United Kingdom,Europe,6,33,388.73,55,0.3,216.40,83.89,-61.2,Declining
+Ethiopia,Africa,8,35,367.34,56,0.2,166.36,119.60,-28.1,Declining
+Honduras,North America,11,40,364.11,57,0.2,110.15,59.35,-46.1,Declining
+Tanzania,Africa,10,37,361.67,58,0.2,144.05,111.97,-22.3,Declining
+Slovenia,Europe,10,37,361.05,59,0.2,94.34,104.74,11.0,Growing
+Cuba,North America,8,37,355.70,60,0.2,158.30,63.82,-59.7,Declining
+Bangladesh,Asia,7,39,347.51,61,0.2,139.51,72.70,-47.9,Declining
+Bulgaria,Europe,6,36,344.01,62,0.2,173.38,87.40,-49.6,Declining
+Sierra Leone,Africa,8,34,332.69,63,0.2,60.56,157.29,159.7,Growing
+Yemen,Asia,6,32,324.93,64,0.2,108.03,154.10,42.6,Growing
+Hungary,Europe,7,30,313.65,65,0.2,57.03,119.09,108.8,Growing
+Uzbekistan,Asia,7,32,298.28,66,0.2,11.62,186.14,1501.9,Growing
+Haiti,North America,5,31,284.60,67,0.2,57.35,153.59,167.8,Growing
+Moldova,Europe,7,27,270.92,68,0.2,49.97,46.31,-7.3,Declining
+Guinea,Africa,6,23,257.71,69,0.2,89.19,105.62,18.4,Growing
+Venezuela,South America,4,28,247.90,70,0.2,71.28,13.67,-80.8,Declining
+Cyprus,Europe,5,24,243.71,71,0.2,113.59,104.75,-7.8,Declining
+Kiribati,Oceania,5,23,241.32,72,0.2,86.59,81.27,-6.1,Declining
+Myanmar,Asia,7,28,229.52,73,0.1,90.84,52.65,-42.0,Declining
+Samoa,Oceania,4,21,228.12,74,0.1,74.20,23.60,-68.2,Declining
+French Polynesia,Oceania,4,19,225.55,75,0.1,91.22,28.76,-68.5,Declining
+Ecuador,South America,4,19,211.87,76,0.1,5.78,135.11,2237.5,Growing
+North Korea,Asia,4,19,211.50,77,0.1,49.54,36.75,-25.8,Declining
+Montenegro,Europe,3,17,208.77,78,0.1,0.00,90.94,,New
+Rwanda,Africa,4,19,206.41,79,0.1,27.03,131.61,386.9,Growing
+Australia,Oceania,5,20,202.58,80,0.1,38.19,84.90,122.3,Growing
+Georgia,Asia,4,20,199.59,81,0.1,69.77,64.39,-7.7,Declining
+Mali,Africa,6,21,196.78,82,0.1,81.45,81.85,0.5,Flat
+Micronesia,Oceania,3,16,193.10,83,0.1,0.00,171.01,,New
+South Korea,Asia,2,17,192.01,84,0.1,90.76,59.49,-34.5,Declining
+Luxembourg,Europe,3,21,182.70,85,0.1,73.61,58.08,-21.1,Declining
+Burkina Faso,Africa,4,18,180.22,86,0.1,58.54,120.44,105.7,Growing
+Ivory Coast,Africa,3,16,179.91,87,0.1,0.00,129.97,,New
+Taiwan,Asia,3,18,173.92,88,0.1,124.88,0.00,-100.0,Declining
+Egypt,Africa,3,19,173.75,89,0.1,24.23,36.41,50.3,Growing
+Uganda,Africa,4,17,168.92,90,0.1,28.97,98.11,238.7,Growing
+Kosovo,Europe,3,15,149.77,91,0.1,56.22,84.19,49.8,Growing
+Nepal,Asia,4,20,147.63,92,0.1,4.32,99.52,2203.7,Growing
+Libya,Africa,2,15,146.91,93,0.1,65.45,19.18,-70.7,Declining
+Namibia,Africa,3,13,145.59,94,0.1,75.98,15.93,-79.0,Declining
+Germany,Europe,4,16,141.55,95,0.1,30.00,14.88,-50.4,Declining
+Ghana,Africa,3,14,138.82,96,0.1,0.00,37.25,,New
+Denmark,Europe,3,14,137.20,97,0.1,90.50,46.70,-48.4,Declining
+Estonia,Europe,3,13,129.99,98,0.1,33.09,14.21,-57.1,Declining
+Malta,Europe,4,16,121.88,99,0.1,26.67,80.44,201.6,Growing
+Spain,Europe,3,9,117.03,100,0.1,28.15,46.25,64.3,Growing
+Kyrgyzstan,Asia,4,16,114.15,101,0.1,44.10,21.14,-52.1,Declining
+Macedonia,Europe,2,11,106.30,102,0.1,34.20,7.15,-79.1,Declining
+Lesotho,Africa,3,13,102.05,103,0.1,0.00,81.52,,New
+Latvia,Europe,2,8,85.84,104,0.1,42.37,27.29,-35.6,Declining
+Kazakhstan,Asia,2,6,68.08,105,0.0,27.06,41.02,51.6,Growing
+Palestine,Asia,3,8,67.54,106,0.0,33.38,0.00,-100.0,Declining
+Israel,Asia,2,8,62.69,107,0.0,51.56,11.13,-78.4,Declining
+Equatorial Guinea,Africa,2,8,61.33,108,0.0,11.53,12.29,6.6,Growing
+Paraguay,South America,1,1,11.61,109,0.0,0.00,0.00,,New

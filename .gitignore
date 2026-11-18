@@ -14,3 +14,6 @@ obj/
 
 # Power BI temp files
 ~$*
+
+# Agreed gravity_dw snapshot backup is tracked on purpose
+!snapshot/*.bak
